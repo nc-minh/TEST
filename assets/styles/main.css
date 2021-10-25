@@ -1,0 +1,156 @@
+:root{
+    --menubar-bg: #353a40;
+    --color-gray: #808589;
+    --text: #ccc;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: sans-serif;
+}
+
+#app{
+    width: 100%;
+    height: 100vh;
+}
+
+.menubar{
+    background-color: var(--menubar-bg);
+    height: 1000px;
+}
+
+.menubar__name{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: .1rem solid #ccc;
+}
+
+.menubar__name__wrapper{
+    margin-left: 2rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.menubar__name__img{
+    width: 100%;
+    height: 100%;
+}
+
+.menubar__name__text{
+    margin-left: 1rem;
+    color: var(--color-gray);
+}
+
+.menubar__search{
+    border: .1rem solid #ddd;
+    background-color: #3f484f;
+    border-radius: .5rem;
+    display: flex;
+    margin: 1rem .5rem;
+}
+
+.menubar__search__input{
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: #3f484f;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--text);
+    border-right: .1rem solid #ccc;
+}
+
+.menubar__search i{
+    font-size: 2rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.menubar__dashboard__wrapper,
+.menubar__dashboard__item{
+    padding: 1rem;
+    background-color: #007aff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    margin: 1rem .5rem;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    color: #ccc;
+}
+
+.menubar__dashboard__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubar__dashboard__wrapper__text{
+    margin-left: 1rem;
+}
+
+.menubar__dashboard__item{
+    justify-content: start;
+    background-color: #353a40;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.menubar__dashboard__item:hover{
+    background-color: #ccc;
+    color: #353a40;
+}
+
+.menubar__dashboard__item__text{
+    margin-left: 1rem;
+}
+
+.menubar__listoptions__item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    margin: 0 2rem;
+    padding: 1.2rem 0;
+    color: #ccc;
+}
+
+.menubar__listoptions__item__flex{
+    display: flex;
+}
+
+.menubar__listoptions__item__text{
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+
+.menubar__listoptions__item__new{
+    background-color: #ff0000;
+    padding: .2rem .4rem;
+    border-radius: .3rem;
+    font-size: 1.4rem;
+}
+
+.menubar__listoptions__item__icon{
+    display: flex;
+}
+
+.menubar__listoptions__item__count{
+    margin-right: 1rem;
+    background-color: #0a9eb6;
+    padding: .2rem .4rem;
+    border-radius: .3rem;
+    font-size: 1.4rem;
+}
