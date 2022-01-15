@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 69px;
+}
+
+.header__wapper{
+    display: flex;
+    align-items: center;
+}
+
+.input:focus{
+    border: #000;
+}
+
+.header__list{
+    display: flex;
+    list-style: none;
+}
+
+.header__item{
+    margin: 0 18px;
+}
+
+.header__item__link{
+    text-decoration: none;
+    font-size: 18px;
+    color: #3a2222;
+}
+
+.header__item__link:hover{
+    color: #f65e39;
+}
+
+.header__item:nth-child(2){
+    position: relative;
+}
+
+.header__item:nth-child(2)::before{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #f65e39;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+
+.header__change{
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    padding: 6px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__change__star{
+    background-color: #ff0000;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__change__star i{
+    font-size: 12px;
+    color: #ffd900;
+}
+
+.header__change__text{
+    padding: 0 6px;
+}
+
+.header__change__hover{
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+    border: #ccc solid 1px;
+    top: 46px;
+    right: 0;
+    width: 472px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+    display: none;
+}
+
+.change__hover__left,
+.change__hover__right{
+    list-style: none;
+    flex: 1;
+    padding: 0 12px;
+    position: relative;
+}
+
+.change__hover__left__item__link,
+.change__hover__right__link{
+    padding: 12px 8px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+
+.change__hover__left__item__link:hover,
+.change__hover__right__link:hover{
+    color: #f65e39;
+}
+
+.change__hover__right::before{
+    content: '';
+    display: block;
+    height: 90%;
+    top: 5%;
+    width: 1px;
+    background-color: #ccc;
+    position: absolute;
+}
+
+.hover__left__item__link__text{
+    display: block;
+}
+
+.hover__left__item__link__img{
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin-right: 5px;
+}
+
+.hover__right__link__name{
+    margin-right: 5px;
+}
+
+.test{
+    height: 5000px;
+}
+
