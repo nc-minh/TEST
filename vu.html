@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <label id="label" for="">Email của bạn 1</label>
+        <input id="input" type="text">
+        <button id="btn" onclick="rennder()">Thêm</button>
+        <div id="child"></div>
+    </div>
+
+    <script>
+        const btn = document.getElementById('btn')
+        const child = document.getElementById('child')
+        var num = 1
+
+        
+
+        function rennder(){
+            num++
+            const node = `
+                <div>
+                    <label id="label" for="">Email của bạn ${num}</label>
+                    <input id="input" type="text">
+                    <button id="btn" onclick="remove(this)">xóa</button>
+                </div>
+            `
+            let div = document.createElement("div")
+            div.innerHTML = node
+            child.append(div)
+        }
+
+        function remove(e){
+           var element = e.parentElement
+           element.remove()
+        }
+    </script>
+</body>
+</html>
