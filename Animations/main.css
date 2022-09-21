@@ -1,0 +1,25 @@
+div {
+  background: blue;
+  width: 50px;
+  height: 75px;
+  position: relative;
+}
+div:before {
+  content: '';
+  background-image: radial-gradient(circle at 100% 100%, rgba(204, 0, 0, 0) 100px, blue 100px);
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100px;
+  height: 75px;
+}
+div:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 75px;
+  background: blue;
+  border-radius: 0 0 100% 0 / 0 0 100% 0;
+  top: 100%;
+  left: 0;
+}
